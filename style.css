@@ -6,3 +6,13 @@
     font-weight: bold;
     color:#fff;
 }
+header{
+    height: 50px;
+}
+.header-container{
+    background-color:#F7F1E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
