@@ -68,3 +68,6 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+span{
+    color: #F7C04A;
+}
