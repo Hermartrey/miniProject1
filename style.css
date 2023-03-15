@@ -71,3 +71,22 @@ header{
 span{
     color: #F7C04A;
 }
+.image{
+    width: 30%;
+    position: relative;
+    text-align: right;
+}
+ .image img{
+    width: 80%;
+    height: 50%;
+    border-radius:45% 55% 54% 46% / 28% 25% 75% 72% ;
+    background-color: #F7C04A;
+    min-width: 250px;
+}
+
+.image img:hover{
+    -webkit-box-shadow: 8px 9px 80px -8px rgba(247,192,74,1);
+    -moz-box-shadow: 8px 9px 80px -8px rgba(247,192,74,1);
+    box-shadow: 8px 9px 80px -8px rgba(247,192,74,1);
+    cursor: pointer;
+}
