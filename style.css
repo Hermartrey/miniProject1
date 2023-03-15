@@ -40,3 +40,13 @@ header{
     text-decoration: none;
     color: #191825;
 }
+.container{
+    height: 60%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
