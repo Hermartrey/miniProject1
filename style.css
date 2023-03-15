@@ -29,6 +29,13 @@ header{
     border-radius: 50%;
     margin-left: 5%;
 }
+.nav-container{
+    margin-right: 20%;
+}
+.nav-container ul{
+    display: flex;
+    width: 500px;
+}
 .nav-item{
     list-style-type: none;
     margin: 10px 6%;
