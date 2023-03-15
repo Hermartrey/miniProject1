@@ -123,3 +123,20 @@ span{
     border: 1px solid white;
     margin-right:10px;
 }
+.image-container{
+    width: 30%;
+    height: 90%;
+}
+.about .image-container .about-pic{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.about-details{
+    height: 90%;
+    width: 50%;
+}
+.about-details p{
+    font-size: 1.7rem;
+}
+
