@@ -6,6 +6,11 @@
     font-weight: bold;
     color:#fff;
 }
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #191825;
+}
 header{
     height: 50px;
 }
