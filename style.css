@@ -50,3 +50,21 @@ header{
     align-items: center;
     padding-top: 100px;
 }
+.intro-text{
+    text-align: center;
+    width: 60%;
+    letter-spacing:0.2rem;
+    font-size: 1.2rem;
+    line-height: 70px;
+}
+.intro-text p{
+    font-size: 2.5rem;
+}
+.intro-text h2{
+    font-style: italic;
+    margin:0 auto;
+    font-size: 62px;
+    background: -webkit-linear-gradient(#eee, #6f6c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
