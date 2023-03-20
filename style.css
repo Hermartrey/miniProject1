@@ -8,13 +8,12 @@
     font-weight: bold;
     color:#fff;
 }
-main{
-    width: 100%;
-    height: 100vh;
-    background-color: #191825;
-}
+
 header{
     height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 .header-container{
     background-color:#F7F1E5;
@@ -22,6 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    
 }
 .logo{
     height: 30px;
@@ -49,15 +49,21 @@ header{
     text-decoration: none;
     color: #191825;
 }
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #191825;
+}
 .container{
     height: 60%;
-    width: 80%;
+    width: 90%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 300px;
+    
 }
 .intro-text{
     text-align: center;
@@ -65,14 +71,16 @@ header{
     letter-spacing:0.2rem;
     font-size: 1.2rem;
     line-height: 70px;
+   
+   
 }
 .intro-text p{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 .intro-text h2{
     font-style: italic;
     margin:0 auto;
-    font-size: 62px;
+    font-size: 3rem;
     background: -webkit-linear-gradient(#eee, #6f6c6c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -84,13 +92,16 @@ span{
     width: 30%;
     position: relative;
     text-align: right;
+    display: flex;
+    flex-direction: row;
+
 }
  .image img{
     width: 80%;
     height: 50%;
     border-radius:45% 55% 54% 46% / 28% 25% 75% 72% ;
     background-color: #F7C04A;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .image img:hover{
@@ -98,6 +109,19 @@ span{
     -moz-box-shadow: 8px 9px 80px -8px rgba(247,192,74,1);
     box-shadow: 8px 9px 80px -8px rgba(247,192,74,1);
     cursor: pointer;
+}
+.font-awesome{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:20px;
+ 
+}
+.fa-brands{
+    margin: 10px 0;
+}i{
+    
 }
 #about-container{
     width: 100%;
@@ -148,4 +172,11 @@ span{
 .about-details p{
     font-size: 1.7rem;
 }
-
+.portfolio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#F7C04A;
+}
