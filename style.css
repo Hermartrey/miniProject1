@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
-
+/************UNIVERSAL SELECTOR**********/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     color:#fff;
 }
-
+/*****************header*************/
 header{
     height: 50px;
     width: 100%;
@@ -49,6 +48,7 @@ header{
     text-decoration: none;
     color: #191825;
 }
+/* ******************MAIN***************** */
 main{
     width: 100%;
     height: 100vh;
@@ -63,45 +63,41 @@ main{
     justify-content: center;
     align-items: center;
     padding-top: 300px;
-    
+    flex: 1 1 1;
 }
 .intro-text{
     text-align: center;
     width: 60%;
-    letter-spacing:0.2rem;
+    letter-spacing:0.1rem;
     font-size: 1.2rem;
-    line-height: 70px;
-   
-   
+    
 }
 .intro-text p{
     font-size: 2.1rem;
+    line-height: 50px;
+   
 }
 .intro-text h2{
     font-style: italic;
     margin:0 auto;
     font-size: 3rem;
-    background: -webkit-linear-gradient(#eee, #6f6c6c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 span{
     color: #F7C04A;
 }
 .image{
-    width: 30%;
+    width: 20%;
     position: relative;
     text-align: right;
     display: flex;
     flex-direction: row;
-
+    min-width: 180px;
 }
  .image img{
-    width: 80%;
+    width: 100%;
     height: 50%;
     border-radius:45% 55% 54% 46% / 28% 25% 75% 72% ;
     background-color: #F7C04A;
-    min-width: 200px;
 }
 
 .image img:hover{
@@ -116,13 +112,42 @@ span{
     justify-content: center;
     flex-direction: column;
     margin-left:20px;
- 
+    width: 5%;
 }
 .fa-brands{
-    margin: 10px 0;
-}i{
-    
+   font-size: 25px;
+   margin-bottom: 15px;
 }
+.fa-facebook{
+    color: #1B7BF2;
+}
+.fa-instagram{
+    color: #E32A2F;
+}
+.fa-github{
+    color: #343333;
+    text-align: center;
+}
+.fa-facebook,.fa-github,.fa-instagram{
+    position: absolute;
+    transform: translate(-50%, 20%);
+}
+.font-awesome a{
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .6s;
+    text-align: center;
+    margin-top: 10px;
+}
+.font-awesome a:hover{
+    transform: translate(10px, 0);
+}
+
+/* *****************ABOUT***************** */
 #about-container{
     width: 100%;
     height: 100vh;
@@ -169,9 +194,13 @@ span{
     height: 90%;
     width: 50%;
 }
-.about-details p{
+/* .about-details p{
     font-size: 1.7rem;
+} */
+.about-paragraph{
+    line-height: 2em;
 }
+/* ****************PORTFOLIO***************** */
 .portfolio{
     width: 100%;
     height: 100vh;
