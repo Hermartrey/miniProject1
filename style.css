@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color:#fff;
+    color:#191825;
 }
 /*****************header*************/
 header{
@@ -15,7 +15,7 @@ header{
     z-index: 1;
 }
 .header-container{
-    background-color:#F7F1E5;
+    background-color:#FCFFE7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ header{
 main{
     width: 100%;
     height: 100vh;
-    background-color: #191825;
+    background-color: #FCFFE7;
 }
 .container{
     height: 60%;
@@ -62,8 +62,8 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 300px;
-    flex: 1 1 1;
+    padding-top: 200px;
+    
 }
 .intro-text{
     text-align: center;
@@ -97,7 +97,7 @@ span{
     width: 100%;
     height: 50%;
     border-radius:45% 55% 54% 46% / 28% 25% 75% 72% ;
-    background-color: #F7C04A;
+    background-color: #f7c04ab4;
 }
 
 .image img:hover{
@@ -116,7 +116,7 @@ span{
 }
 .fa-brands{
    font-size: 25px;
-   margin-bottom: 15px;
+   
 }
 .fa-facebook{
     color: #1B7BF2;
@@ -126,32 +126,27 @@ span{
 }
 .fa-github{
     color: #343333;
-    text-align: center;
+    
 }
 .fa-facebook,.fa-github,.fa-instagram{
-    position: absolute;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%); 
 }
 .font-awesome a{
-    position: relative;
-    display: inline-block;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    background-color: #fff;
     transition: .6s;
-    text-align: center;
     margin-top: 10px;
+    
 }
 .font-awesome a:hover{
     transform: translate(10px, 0);
+    
+    
 }
 
 /* *****************ABOUT***************** */
 #about-container{
     width: 100%;
-    height: 100vh;
-    background-color:#191825;
+    height: 80vh;
+    background-color: rgba(211, 211, 211, 0.522);
 }
 .about-h2{
     width: 200px;
@@ -165,15 +160,16 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     margin: 0 auto;
     padding-top: 3%;
     column-gap: 5%;
+    min-width: 400px;
 }
 .about-h2::after{
     content: ' ';
-    border: 1px solid white;
+    border: 1px solid #191825;
     margin-left: 10px;
 }
 .about-h2::before{
@@ -187,25 +183,16 @@ span{
 }
 .about .image-container .about-pic{
     width: 100%;
-    height: 100%;
+    height: 80%;
     justify-content: center;
+     min-width: 130px;
 }
 .about-details{
     height: 90%;
     width: 50%;
 }
-/* .about-details p{
-    font-size: 1.7rem;
-} */
+
 .about-paragraph{
     line-height: 2em;
 }
 /* ****************PORTFOLIO***************** */
-.portfolio{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#F7C04A;
-}
