@@ -362,4 +362,95 @@
 .button input[type="button"]:hover{
     background-color: #5029bc;
 }
+/* ***************FOOTER************** */
+footer{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* *************MEDIA QUERIE************* */
+@media(max-width: 700px){
+    .header{
+        background-color: #F5F5F5;
+    }
+    #main{
+        background: url(./images/background-image.png);
+        background-size: cover;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    .tex-blur{
+        display:block;
+        position: absolute;
+        top: 50%;
+        color: #19A7CE;
+        margin: 0 10%;
+        z-index: 10;
+        text-align: center;
+        border: 2px solid #19A7CE;
+        padding: 20px 10px;
+        font-weight: bold;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.4);
+    }
+    .tex-blur i{
+        color: #F5F5F5;
+        margin-left: 10px;
+    }
+    .intro-text h1, .image, .intro-text, .font-awesome{
+        display: none;
+    }
+    
+    .about-container .content{
+        display: block;
+    }
+    .image-container{
+       width: 100%;
+       height: 55%;
+    }
+    .content .image-container .about-image{
+        width: 100%;
+        height: 100%;
+    }
+    .about-details{
+        height: 90%;
+        width: 40%;
+        min-width: 300px;
+        
+        
+    }
+    
+}
+@media only screen and (max-width: 820px){
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;   
+    }
+}
+@media only screen and (max-width: 820px){
+    .contact-container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .contact-container .content{
+        flex-direction: column-reverse;
+    }
+    .contact-container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-container .content .left-side::before{
+        display: none;
+    }
+    .contact-container .content .right-side{
+        width: 100%;
+        margin-left:0;
+    }
+}
+
 
