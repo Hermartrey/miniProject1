@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 2% 5%;
-    background-color: #f5f5f5a2;
+    
   }
   .navbar-toggler-icon{
     color: var(--primary-color);
@@ -388,6 +388,9 @@ footer{
         background-color: #F5F5F5;
         color: #191825;
     }
+    nav {
+        background-color: #f5f5f58f;
+      }
     #icon{
         display: none;
     }
