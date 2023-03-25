@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=PT+Sans+Narrow&family=Playfair+Display&family=Poppins:wght@300;400&display=swap');
-
-/************UNIVERSAL SELECTOR**********/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
-    color:#191825; 
 }
 :root{
     --primary-color: #F5F5F5;
@@ -23,11 +18,12 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
   }
 
   .logo{
     width: 50px;
-    height: 50px;
     border-radius:50%;
   }
   nav {
@@ -37,16 +33,22 @@
     padding: 2% 5%;
   }
   .navbar-toggler-icon{
-    color: #F5F5F5;
+    color: var(--primary-color);
   }
   nav ul li {
-    display: inline-block;
     margin: 10px 20px;
   }
   nav ul li a {
-    color: #191825;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 18px;
+  }
+  nav ul li:hover{
+    color: #19A7CE;
+  }
+  #icon{
+    width: 30px;
+    cursor: pointer;
   }
   .header-text {
     position: absolute;
@@ -67,7 +69,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F5F5F5;  
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 #main .main-container{
     display: flex;
@@ -98,10 +101,15 @@
 .intro-text .description{
     font-size: 10px;
 }
-.intro-text h2{
+.intro-text h1{
     font-style: italic;
     margin:0 auto;
     
+}
+.intro-text .btn{
+    border:1px solid #19A7CE;
+    padding: 4px 8px;
+    background-color: #19A7CE;
 }
 .name{
     font-size: 2.9rem;
@@ -144,8 +152,7 @@
     color: #E32A2F;
 }
 .fa-github{
-    color: #343333;
-    
+    color: var(--secondary-color);
 }
 .font-awesome a{
     transition: .6s;
@@ -163,17 +170,16 @@
 #about{
     width: 100%;
     height: 100vh;
-    background-color: #F5F5F5; 
+    background-color: var(--primary-color);
     display: flex;
     align-items:center;
     flex-direction: column;
-
+    color: var(--secondary-color);
 }
 .about-container{
     width: 80%;
     height: 80%;
-    background-color: #EEEEEE; 
-    
+    background-color: var(--primary-color); 
 }
 .about-h2{
     width: 200px;
@@ -181,6 +187,7 @@
     padding-top: 5%;
     font-weight: bold;
     padding-bottom: 30px;
+    color: #19A7CE;
 }
 .content{
     display: flex;
@@ -195,12 +202,12 @@
 }
 .about-h2::after{
     content: ' ';
-    border: 1px solid #191825;
+    border: 1px solid var(--secondary-color);
     margin-left: 10px;
 }
 .about-h2::before{
     content: ' ';
-    border: 1px solid  #191825;
+    border: 1px solid  var(--secondary-color);
     margin-right:10px;
 }
 .image-container{
@@ -231,11 +238,15 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #F5F5F5; 
+    background-color: var(--primary-color); 
     flex-direction: column;
+    color: var(--secondary-color);
 }
-.portfolio h1{
+#portfolio h4{
     padding: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #19A7CE;
 }
 #portfolio .portfolio-container{
     width: 50%;
@@ -258,14 +269,16 @@
     flex-direction: column;
     row-gap: 50px;
     margin: 0 auto;
-    background-color: #F5F5F5; 
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
-#contact h1{
-    color:#19A7CE;  
+#contact h5{
+    color: #19A7CE;  
+    font-size: 50px;
 }
 .contact-container{
     width: 80%;
-    background: #fff;
+    background: var(--primary-color);
     border-radius: 6px;
     padding: 30px 60px 40px 40px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
@@ -369,11 +382,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 /* *************MEDIA QUERIE************* */
 @media(max-width: 700px){
     .header{
         background-color: #F5F5F5;
+        color: #191825;
+    }
+    #icon{
+        display: none;
     }
     #main{
         background: url(./images/background-image.png);
@@ -394,6 +413,7 @@ footer{
         font-weight: bold;
         background-color: rgb(0,0,0);
         background-color: rgba(0,0,0, 0.4);
+        color: #F5F5F5;
     }
     .tex-blur i{
         color: #F5F5F5;
@@ -418,8 +438,6 @@ footer{
         height: 90%;
         width: 40%;
         min-width: 300px;
-        
-        
     }
     
 }
